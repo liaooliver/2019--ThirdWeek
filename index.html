@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Music Box</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+</head>
+<!-- https://github.com/magicsung/f2ew3-audio-player -->
+
+<body class="d-flex justify-content-center align-items-center vh-100">
+    <div class="layout-init bg-dark text-white">
+        <header class="d-flex justify-content-center align-items-center border-bottom p-3 position-relative">
+            Music
+            <span class="font-weight-bold text-warning">Box</span>
+            <i class="material-icons cursor position-absolute pos-right">list</i>
+        </header>
+        <div class="main-page content">
+            <section class="w-100 mb-2">
+                <p>播放清單</p>
+                <ul class="playList"></ul>
+            </section>
+            <section class="w-100">
+                播放器
+                <div class="text-center mb-3">
+                    <img class="songImage" src="https://picsum.photos/id/436/200/200" width="200" height="200">
+                    <audio id="audio" class="d-none"></audio>
+                    <p class="mt-2"><strong class="name">Song Name</strong></p>
+                </div>
+                <div class="d-flex align-items-center text-white mb-3">
+                    <span class="time-current h-15">00:00</span>
+                    <div class="progress mx-2 cursor">
+                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="25" aria-valuemin="0"
+                            aria-valuemax="100"></div>
+                    </div>
+                    <span class="time-duration h-15 text-right">00:00</span>  
+                </div>
+                <div class="d-flex align-items-center justify-content-around">
+                    <i class="material-icons cursor" onclick="repeat(event)">
+                        repeat
+                    </i>
+                    <i class="material-icons cursor" onclick="playMusic('prev')">
+                        skip_previous
+                    </i>
+                    <i class="material-icons cursor player" style="font-size: 32px;">
+                        play_circle_outline
+                    </i>
+                    <i class="material-icons cursor pause d-none" style="font-size: 32px;">
+                        pause_circle_outline
+                    </i>
+                    <i class="material-icons cursor" onclick="playMusic('next')">
+                        skip_next
+                    </i>
+                    <i class="material-icons cursor " onclick="shuffle(event)">
+                        shuffle
+                    </i>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="./client.js"></script>
+</body>
+
+</html>

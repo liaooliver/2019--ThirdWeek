@@ -1,0 +1,63 @@
+@import './reset';
+
+body{
+    background: rgb(161, 161, 161);
+}
+
+.layout-init{
+    opacity: 0;
+    display: none;
+}
+
+.layout{
+    width: 375px;
+    opacity: 1;
+    display: block;
+    animation: fade-slide-down 2s 0.5s ease-out forwards;
+}
+
+.pos-right{
+    right: 10px;
+}
+
+.content{
+    padding: 20px;
+}
+
+.h-15{
+    width: 15%;
+}
+
+.playList{
+    height: 180px;
+    overflow: auto;
+    padding: 15px;
+}
+
+.progress{
+    height: 10px;
+    flex: 1;
+}
+
+.active{
+    color: #14BDEB;
+    font-weight: bolder !important;
+}
+
+.cursor{
+    cursor:pointer;
+}
+
+@keyframes fade-slide-down{
+   /* 起始位置 */
+    0%{
+        opacity: 0;
+        transform: translateY(-5rem);
+    }
+   /* 結束位置 */
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+
