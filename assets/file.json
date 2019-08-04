@@ -1,27 +1,27 @@
 {
     "source":[
         {
-            "path":"/assets/Dawn_of_Man.mp3",
+            "path":"./assets/Dawn_of_Man.mp3",
             "name":"Dawn of Man",
             "img":"https://picsum.photos/id/431/200/200"
         },
         {
-            "path": "/assets/Slowly_Until_We_Get_There.mp3",
+            "path": "./assets/Slowly_Until_We_Get_There.mp3",
             "name": "Slowly Until We Get There",
             "img":"https://picsum.photos/id/432/200/200"
         },
         {
-            "path": "/assets/Central_Park.mp3",
+            "path": "./assets/Central_Park.mp3",
             "name": "Central Park",
             "img": "https://picsum.photos/id/433/200/200"
         },
         {
-            "path": "/assets/For_We_Are_Many.mp3",
+            "path": "./assets/For_We_Are_Many.mp3",
             "name": "For We Are Many",
             "img": "https://picsum.photos/id/434/200/200"
         },
         {
-            "path": "/assets/The_Long_Night.mp3",
+            "path": "./assets/The_Long_Night.mp3",
             "name": "The Long Night",
             "img": "https://picsum.photos/id/435/200/200"
         }
